@@ -5,21 +5,21 @@
 class Speakeasy < Formula
   desc "The Speakeasy CLI for interacting with the Speakeasy Platform"
   homepage "https://www.speakeasyapi.dev"
-  version "1.37.15"
+  version "1.38.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.37.15/speakeasy_darwin_amd64.zip"
-      sha256 "764f2c1006cf90eec23b2250979c14e13c35c9be2728bc2ae2e96c0028e88d28"
+      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.38.0/speakeasy_darwin_amd64.zip"
+      sha256 "a4a594baa6b69b7dc84a4598f5ad9db89bb8e28513476a38683ceae583e9629f"
 
       def install
         bin.install "speakeasy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.37.15/speakeasy_darwin_arm64.zip"
-      sha256 "9d82c2de5302117de703f3fc4408add8158a7508bdd81262a5a36148966c2bc5"
+      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.38.0/speakeasy_darwin_arm64.zip"
+      sha256 "32f23d2f2e7e3a7ef56d5995c536425aed456797c09336ed9ed81e85148896cd"
 
       def install
         bin.install "speakeasy"
@@ -29,16 +29,16 @@ class Speakeasy < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.37.15/speakeasy_linux_arm64.zip"
-      sha256 "e5f5ac5646b9aac6f02b8bdad0d5d2de70980d2a5e9ea5a64f09376f4502eab1"
+      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.38.0/speakeasy_linux_arm64.zip"
+      sha256 "ced2c45ab355f0e74d95cc483c170a85a1de944d62a929df10cdc626919316f4"
 
       def install
         bin.install "speakeasy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.37.15/speakeasy_linux_amd64.zip"
-      sha256 "6d69d9c05d005f78be3c98e25833a68ff1d3da23fa795e3bf7d0db5a98301f77"
+      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.38.0/speakeasy_linux_amd64.zip"
+      sha256 "ec939d10e414b1da539be218a4c5fc40915ffa0423cf1ae51d4e3a6ce4cbdf41"
 
       def install
         bin.install "speakeasy"
