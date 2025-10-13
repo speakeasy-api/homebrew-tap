@@ -5,21 +5,21 @@
 class Gram < Formula
   desc "The Gram CLI for interacting with the Gram Platform"
   homepage "https://app.getgram.ai"
-  version "0.7.0"
+  version "0.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/gram/releases/download/@gram%2Fcli@0.7.0/gram_darwin_amd64.zip"
-      sha256 "33c695b8472a181ca1d8d9173f2066893fa8e2a90da8bd8af1fc9b4e6430ccd7"
+      url "https://github.com/speakeasy-api/gram/releases/download/@gram%2Fcli@0.8.0/gram_darwin_amd64.zip"
+      sha256 "dbf65accd86c586ceb6f74e3fdc1aefdba641efbaccd6be9ba46fbd7ef3c08bb"
 
       def install
         bin.install "gram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/speakeasy-api/gram/releases/download/@gram%2Fcli@0.7.0/gram_darwin_arm64.zip"
-      sha256 "07a2864611fbfbbe5023d11bf66b49b42287799baefede6e782fcb9abe2b419a"
+      url "https://github.com/speakeasy-api/gram/releases/download/@gram%2Fcli@0.8.0/gram_darwin_arm64.zip"
+      sha256 "ec2872501d5e7c00b1e03c3be611f2403ca0ee07f6e63288d817bd08c4661307"
 
       def install
         bin.install "gram"
@@ -29,15 +29,15 @@ class Gram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/@gram%2Fcli@0.7.0/gram_linux_amd64.zip"
-      sha256 "5b6fdd9ca5d65dfab00a0509b5f367a1ea36cc327cd933be453d0b240ab5d920"
+      url "https://github.com/speakeasy-api/gram/releases/download/@gram%2Fcli@0.8.0/gram_linux_amd64.zip"
+      sha256 "dd007b3276eaa5b611f3111d90d4e77014d9587abbe5b70355b3dfae4c3a71c9"
       def install
         bin.install "gram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/@gram%2Fcli@0.7.0/gram_linux_arm64.zip"
-      sha256 "55118e389ae99a2ad7f3f2ee41ff7a2d1fc29687add882b91cebad5bb7ae65b5"
+      url "https://github.com/speakeasy-api/gram/releases/download/@gram%2Fcli@0.8.0/gram_linux_arm64.zip"
+      sha256 "4ef5fef64f6fc41212b95e2f0046259316f9e1e51ca47568b5eb9a49339385a8"
       def install
         bin.install "gram"
       end
