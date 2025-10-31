@@ -5,21 +5,21 @@
 class Gram < Formula
   desc "The Gram CLI for interacting with the Gram Platform"
   homepage "https://app.getgram.ai"
-  version "0.11.5"
+  version "0.11.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.11.5/gram_darwin_amd64.zip"
-      sha256 "e8f7c0ec21d42c6e2f0c748f86914c6c516198d4bbd4427b3a75248a297d96e6"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.11.6/gram_darwin_amd64.zip"
+      sha256 "e04ab23ab9e0bdf323acbdf72d9734e717bb598aa0e3620c49b819af539cb1a6"
 
       def install
         bin.install "gram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.11.5/gram_darwin_arm64.zip"
-      sha256 "23217caa54596f5579ffa1c874b633b552098c3c9fe2c4ca1c389845ffe0a762"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.11.6/gram_darwin_arm64.zip"
+      sha256 "00160574eb2863ea9e8fcc80f75b2787548a2572d89e5a7b64c4d079c4def66b"
 
       def install
         bin.install "gram"
@@ -29,15 +29,15 @@ class Gram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.11.5/gram_linux_amd64.zip"
-      sha256 "ffced2ed3f96d0cea15351e85cacd69755500d965b47971c18b681eca1102674"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.11.6/gram_linux_amd64.zip"
+      sha256 "5678a8918861f94509aeef0ac493596e88540a1c38412a81fe4c0c6225040cb3"
       def install
         bin.install "gram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.11.5/gram_linux_arm64.zip"
-      sha256 "2a59a319eeada452214418142e80232c3719446a34fa2eab26ed502e3e2454c5"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.11.6/gram_linux_arm64.zip"
+      sha256 "3b327a73aad6bf0fc37a29102a4604b551de5d90a4ed4c015d23d8f06d3f49c5"
       def install
         bin.install "gram"
       end
