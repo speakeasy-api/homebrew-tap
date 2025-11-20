@@ -11,7 +11,7 @@ class SpeakeasyAT16596 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.659.6/speakeasy_darwin_amd64.zip"
-      sha256 "badf727602e9abfd1bfe4991413551f705f44bb39f2ded62d26f4ee9a5fce05d"
+      sha256 "369147358b1cc4b7d16b9cc20d3160bb0bf279537f4bf97c5848c88604099d47"
 
       def install
         bin.install "speakeasy"
@@ -22,7 +22,7 @@ class SpeakeasyAT16596 < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.659.6/speakeasy_darwin_arm64.zip"
-      sha256 "a45f1f370acb5bb661eed3550dd87a701e2aedba49e8cae8dca9212bca0fad3e"
+      sha256 "4a7933809bc1ddeb089f53177316152d28671eb8926efd43dffc995c9e48d63b"
 
       def install
         bin.install "speakeasy"
@@ -36,7 +36,7 @@ class SpeakeasyAT16596 < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.659.6/speakeasy_linux_amd64.zip"
-      sha256 "7c10ea26b57d55bfee898082b3acb9fba5d8e48a54e169ed1d3277d5841d83cd"
+      sha256 "65ceb3f2704438e0bba30cb42138e988ccb9b857e4f07b40fb14afbfd498dcaf"
       def install
         bin.install "speakeasy"
         bash_completion.install "completions/speakeasy.bash" => "speakeasy"
@@ -46,7 +46,7 @@ class SpeakeasyAT16596 < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.659.6/speakeasy_linux_arm64.zip"
-      sha256 "623190e4b8a21b4747508cc9731baceacb18d45366611c756fd9cf4c3dcc0a1e"
+      sha256 "ea535ee5cf28d46797d0f068ba47e75393ace4d69df16b2f9115f00ab26a3745"
       def install
         bin.install "speakeasy"
         bash_completion.install "completions/speakeasy.bash" => "speakeasy"
