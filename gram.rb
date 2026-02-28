@@ -5,23 +5,23 @@
 class Gram < Formula
   desc "The Gram CLI for interacting with the Gram Platform"
   homepage "https://app.getgram.ai"
-  version "0.15.4"
+  version "0.15.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.4/gram_darwin_amd64.zip"
-      sha256 "b682cd09002ee30749fbea777038d6c10633b1cca1c85057dd7c31682c1115c5"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.5/gram_darwin_amd64.zip"
+      sha256 "b069f8d3c4e76d4428897423c401f1dabb2e253b421012de5c7fb0c05288c984"
 
-      def install
+      define_method(:install) do
         bin.install "gram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.4/gram_darwin_arm64.zip"
-      sha256 "62663f467c9138197d1810e4f372446c4bdbc5617ba299470d3fa0b209a9b046"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.5/gram_darwin_arm64.zip"
+      sha256 "18e6f3fe94a3c911cefe0e3b8dda0da873cf91dd78a45cad9e9c91d04f60a249"
 
-      def install
+      define_method(:install) do
         bin.install "gram"
       end
     end
@@ -29,16 +29,16 @@ class Gram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.4/gram_linux_amd64.zip"
-      sha256 "61b73c03c321b2dfdb2b9318eaebaa509add86725859d6fb256ccc3f616754a1"
-      def install
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.5/gram_linux_amd64.zip"
+      sha256 "3fe437d45e0b46fb1a71c57b6126c5b66d75e88989ba9cfb956353f878d78a66"
+      define_method(:install) do
         bin.install "gram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.4/gram_linux_arm64.zip"
-      sha256 "cf0101a54fc071ea472ab266983214cadf1c545b071f8d894c23212b19fefacd"
-      def install
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.5/gram_linux_arm64.zip"
+      sha256 "79e8559375420ee2c08cdc11c5c853d1d18dd61c32458966d26fa3cbae50f468"
+      define_method(:install) do
         bin.install "gram"
       end
     end
