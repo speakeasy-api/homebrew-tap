@@ -5,21 +5,21 @@
 class Gram < Formula
   desc "The Gram CLI for interacting with the Gram Platform"
   homepage "https://app.getgram.ai"
-  version "0.15.6"
+  version "0.15.8"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.6/gram_darwin_amd64.zip"
-      sha256 "476b0aea97346262faa2b0ad5a05b08dc9003633cf8564a8b65ffaf28fc80ba9"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.8/gram_darwin_amd64.zip"
+      sha256 "e4fecc5361063e5c41dfaf01c34121bbfd00c0e9724df7f7e303e1138842d2fe"
 
       define_method(:install) do
         bin.install "gram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.6/gram_darwin_arm64.zip"
-      sha256 "795da42cfe6d2f1ea267a92c9ed0a66ba2f0e9b1f4a28b6519d39c439343befd"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.8/gram_darwin_arm64.zip"
+      sha256 "998b8277c06d6dc74963b7cc2026c95efb7f09308be57393e625bd07709de975"
 
       define_method(:install) do
         bin.install "gram"
@@ -29,15 +29,15 @@ class Gram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.6/gram_linux_amd64.zip"
-      sha256 "8edd7ada4999104a02823fbc18e54d6fc8ef2df34657c4783e422863e4d1787e"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.8/gram_linux_amd64.zip"
+      sha256 "1386ed08be387d2238bf431629bee01dd4bb68ae0240413037a5c82c658d61cb"
       define_method(:install) do
         bin.install "gram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.6/gram_linux_arm64.zip"
-      sha256 "cfd2ade9465a1a680bea32b42f8bc0a05f889966e912f47bb2be84a431304491"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.15.8/gram_linux_arm64.zip"
+      sha256 "478614a27a88c9f55f31bbeaed80dc0a8877f3e1eaa42f375a45b0bd46e0325e"
       define_method(:install) do
         bin.install "gram"
       end
