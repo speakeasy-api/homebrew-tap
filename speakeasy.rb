@@ -5,13 +5,13 @@
 class Speakeasy < Formula
   desc "The Speakeasy CLI for interacting with the Speakeasy Platform"
   homepage "https://www.speakeasy.com"
-  version "1.776.0"
+  version "1.777.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.776.0/speakeasy_darwin_amd64.zip"
-      sha256 "0a3b738e12edecbaa3d9592a48c3d2a435533f9f80a8d40cfa93f983686ad3cc"
+      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.777.0/speakeasy_darwin_amd64.zip"
+      sha256 "75385fa0e3b1a8e944d594b9684cdd951bdeb38870078f185bd6810f5d7265e1"
 
       define_method(:install) do
         bin.install "speakeasy"
@@ -21,8 +21,8 @@ class Speakeasy < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.776.0/speakeasy_darwin_arm64.zip"
-      sha256 "17f2be976c0bf4ced1ddcb8686a295ae552119cfe5dc7658fcd01a1c796410f1"
+      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.777.0/speakeasy_darwin_arm64.zip"
+      sha256 "6e1039d0c42ff693f9a1271e735d458faa7cc5f4827732cb7228dba46d31fb6d"
 
       define_method(:install) do
         bin.install "speakeasy"
@@ -35,8 +35,8 @@ class Speakeasy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.776.0/speakeasy_linux_amd64.zip"
-      sha256 "f32a9ae63af902ee74acf8d1a67d5f92b808e6b7f86a7a4ab5c9eaa0f7194cae"
+      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.777.0/speakeasy_linux_amd64.zip"
+      sha256 "4dc24ffdd356c09e117fd57cdaa0d5c7176a4485a0cf029895c811cd7e970a34"
       define_method(:install) do
         bin.install "speakeasy"
         bash_completion.install "completions/speakeasy.bash" => "speakeasy"
@@ -45,8 +45,8 @@ class Speakeasy < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.776.0/speakeasy_linux_arm64.zip"
-      sha256 "00f09d836a30fb39fd86f06bdf3eba8d56af3fddd1f6cda3d624e11ab0aa39a4"
+      url "https://github.com/speakeasy-api/speakeasy/releases/download/v1.777.0/speakeasy_linux_arm64.zip"
+      sha256 "d59bed786b39e75941b9ed588bf0d7af1c5dd26134c0a61fb9d2fb427ed3c402"
       define_method(:install) do
         bin.install "speakeasy"
         bash_completion.install "completions/speakeasy.bash" => "speakeasy"
