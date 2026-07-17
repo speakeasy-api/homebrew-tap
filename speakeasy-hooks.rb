@@ -5,21 +5,21 @@
 class SpeakeasyHooks < Formula
   desc "Speakeasy observability hooks for coding agents"
   homepage "https://app.getgram.ai"
-  version "0.1.1"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/gram/releases/download/hooks@0.1.1/speakeasy-hooks_darwin_amd64.zip"
-      sha256 "ff5fda9b48e9ff33a789bf92563f1f93822e17411e9de36584198eaa704cb5c0"
+      url "https://github.com/speakeasy-api/gram/releases/download/hooks@0.2.0/speakeasy-hooks_darwin_amd64.zip"
+      sha256 "295b8561ccf82bcf1957fb3a843ddc228e0cc7f76cf8fd97c93c521ac6f80765"
 
       define_method(:install) do
         bin.install "speakeasy-hooks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/speakeasy-api/gram/releases/download/hooks@0.1.1/speakeasy-hooks_darwin_arm64.zip"
-      sha256 "a61c5cc2721f1637262c91a710299941b0cd1316882c7338916c1349b56cccc5"
+      url "https://github.com/speakeasy-api/gram/releases/download/hooks@0.2.0/speakeasy-hooks_darwin_arm64.zip"
+      sha256 "59eeadc5523593bcd575e0f3c16832392b0b37f829f3cc17cca1cf957399adef"
 
       define_method(:install) do
         bin.install "speakeasy-hooks"
@@ -29,15 +29,15 @@ class SpeakeasyHooks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/hooks@0.1.1/speakeasy-hooks_linux_amd64.zip"
-      sha256 "4127504a2d01d3e07dc4f6852e8e1551f404a98bf14f60a766d8dae110d361d3"
+      url "https://github.com/speakeasy-api/gram/releases/download/hooks@0.2.0/speakeasy-hooks_linux_amd64.zip"
+      sha256 "3ce1ddf4d2451115f2f8dfb449b8a13dfadc9ac6c0df9d0a532d3ef32c86db26"
       define_method(:install) do
         bin.install "speakeasy-hooks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/hooks@0.1.1/speakeasy-hooks_linux_arm64.zip"
-      sha256 "1f791adf002c71ac8fef7e6cd086f875a957115669c1d991a45f6a7a0a935311"
+      url "https://github.com/speakeasy-api/gram/releases/download/hooks@0.2.0/speakeasy-hooks_linux_arm64.zip"
+      sha256 "876e4fa8d3f5bb6208908a11a6d7d54a4ef629145e3cd20577afb475d2dc143c"
       define_method(:install) do
         bin.install "speakeasy-hooks"
       end
