@@ -5,21 +5,21 @@
 class Cli < Formula
   desc "Speakeasy AI Control Plane CLI"
   homepage "https://ai.speakeasy.com"
-  version "0.19.0"
+  version "0.19.1"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.19.0/speakeasy_darwin_amd64.zip"
-      sha256 "830fadad4be38c1b7442257dc804e36fafcd6fcb9f99b872e4229c0d453d373e"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.19.1/speakeasy_darwin_amd64.zip"
+      sha256 "ee97dd5637267f89cd477a94c33af5cafdc563d3a441a968034cdd84d387e171"
 
       define_method(:install) do
         bin.install "speakeasy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.19.0/speakeasy_darwin_arm64.zip"
-      sha256 "b8b0087c5b6c986747a0e1822eec0dd9c94241b5a64aabfc5a072e0467d9a1d5"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.19.1/speakeasy_darwin_arm64.zip"
+      sha256 "7094a1411a0c3248c1cf1e72aa13fa63903ff0dd9c446573ac90981399bf621b"
 
       define_method(:install) do
         bin.install "speakeasy"
@@ -29,15 +29,15 @@ class Cli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.19.0/speakeasy_linux_amd64.zip"
-      sha256 "e36c26bb9b139f82005da8e073556897ce3d6836bc5181ac78a3305eaf4f8cdf"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.19.1/speakeasy_linux_amd64.zip"
+      sha256 "76d55341de9122c3dd887b3bce1785cc4e88656172668136d672ce7c03ede888"
       define_method(:install) do
         bin.install "speakeasy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.19.0/speakeasy_linux_arm64.zip"
-      sha256 "50088a0ced1d89ea1ac74b0cba7317eafec5936088ff2f29a16189f4d745d215"
+      url "https://github.com/speakeasy-api/gram/releases/download/cli@0.19.1/speakeasy_linux_arm64.zip"
+      sha256 "0bd810a8bff2464e30615c2e70798cb8b1dc875294e25faed33cdb371b11cf11"
       define_method(:install) do
         bin.install "speakeasy"
       end
